@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Device</title>
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
     <!--Header -->
@@ -76,20 +77,20 @@
     <!--Main -->
     <main class="main_inner">
         <!--Inner_Header -->
-        <header class="inner_header">
+        <section class="inner_header">
             <h1 class="inner_header_title">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
-                <li class="breadcrumbs-item">
+                <li class="breadcrumbs_item">
                     <a class="breadcrumbs-link" href="index.html">Главная</a>
                 </li>
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+                <li class="breadcrumbs_item">
+                    <a class="breadcrumbs_link" href="catalog.html">Каталог товаров</a>
                 </li>
-                <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link">Моноподы для селфи</a>
+                <li class="breadcrumbs_item">
+                    <a class="breadcrumbs_link">Моноподы для селфи</a>
                 </li>
             </ul>
-        </header>
+        </section>
         <!--Catalog_Products -->
         <section class="catalog_products">
             <h2 class="visually_hidden">Каталог</h2>
@@ -157,16 +158,16 @@
                     <ul class="catalog_filter_list">
                         <li class="catalog_filter_item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="yes">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Есть</span>
+                                <input class="visually_hidden control_input" type="radio" name="Bluetooth" value="yes">
+                                <span class="control_mark"></span>
+                                <span class="control_label">Есть</span>
                             </label>
                         </li>
-                        <li class="catalog-filter-item">
+                        <li class="catalog_filter_item">
                             <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="Bluetooth" value="no">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Нет</span>
+                                <input class="visually_hidden control_input" type="radio" name="Bluetooth" value="no">
+                                <span class="control_mark"></span>
+                                <span class="control_label">Нет</span>
                             </label>
                         </li>
                     </ul>
@@ -174,15 +175,15 @@
                 <button class="btn" type="submit">Показать</button>
             </form>
 
-            <h2 class="visually-hidden">Наши товары</h2>
-            <form class="sorting-type">
-                <label class="sorting-type_title" for="sorting">Сортировка</label>
-                <select class="select-control" id="sorting" name="sorting">
+            <h2 class="visually_hidden">Наши товары</h2>
+            <form class="sorting_type">
+                <label class="sorting_type_title" for="sorting">Сортировка</label>
+                <select class="select_control" id="sorting" name="sorting">
                     <option value="popular">Сначала популярные</option>
                     <option value="cheap">Сначала дешёвые</option>
                     <option value="expensive">Сначала дорогие</option>
                 </select>
-                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+                <button class="visually_hidden" type="submit">Отсортировать продукты</button>
             </form>
             <ul class="sorting_control_list">
                 <li class="sorting_control_item">
@@ -202,28 +203,28 @@
                 <li class="product_card">
                     <a class="product_card_link" href="#">
                         <img class="product_card_image" src="/images/product-1.png" width="360" height="380" alt="Любительская селфи-палка">
-                        <h3 class="product-card-title">Любительская селфи-палка</h3>
+                        <h3 class="product_card_title">Любительская селфи-палка</h3>
                     </a>
                     <span class="products_card_price">500 ₽</span>
                 </li>
                 <li class="product_card">
                     <a class="product_card_link" href="#">
                         <img class="product_card_image" src="/images/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
-                        <h3 class="product-card-title">Профессиональная<br>селфи-палка</h3>
+                        <h3 class="product_card_title">Профессиональная<br>селфи-палка</h3>
                     </a>
                     <span class="products_card_price">1 500 ₽</span>
                 </li>
                 <li class="product_card">
                     <a class="product_card_link" href="#">
                         <img class="product_card_image" src="/images/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
-                        <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
+                        <h3 class="product_card_title">Непотопляемая<br>селфи-палка</h3>
                     </a>
                     <span class="products_card_price">2 500 ₽</span>
                 </li>
                 <li class="product_card">
                     <a class="product_card_link" href="#">
                         <img class="product_card_image" src="/images/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                        <h3 class="product-card-title">Селфи-палка «Следуй за<br>мной»</h3>
+                        <h3 class="product_card_title">Селфи-палка «Следуй за<br>мной»</h3>
                     </a>
                     <span class="products_card_price">4 900 ₽</span>
                 </li>
@@ -278,7 +279,7 @@
                     <a href="#" class="footer_nav_link">Контакты</a>
                 </li>
             </ul>
-            <h2 class="visually-hidden">Социальные сети</h2>
+            <h2 class="visually_hidden">Социальные сети</h2>
             <ul class="social">
                 <li class="social_item">
                     <a class="social_link" href="https://www.facebook.com/htmlacademy">
@@ -299,7 +300,7 @@
         </section>
             <!--Footer_contacts-->
         <section class="footer_contacts">
-            <h2 class="visually-hidden">Контакты</h2>
+            <h2 class="visually_hidden">Контакты</h2>
             <a class="footer_contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <a class="footer_contacts_link" href="https://htmlacademy.ru/">
                 <img src="/images/htmlacademy.svg" width="115" height="33" alt="Сайт html academy">
