@@ -22,8 +22,8 @@
             </form>
             <ul class="nav_user_list">
                 <li class="nav_user_item">
-                    <a class="nav_user_link profile" href="">Коля Петухов</a>
-                    <a class="nav_user_link exit" href="#">Выйти</a>
+                    <a class="nav_user_link nav_profile" href="">Коля Петухов</a>
+                    <a class="nav_user_link nav_exit" href="#">Выйти</a>
                 </li>
                 <li class="nav_user_item">
                     <a class="nav_user_link" href="#">Сравнить</a>
@@ -33,7 +33,7 @@
                 </li>
             </ul>
             <div class="nav_catalog">
-                <a class="nav_catalog_link" href="catalog.html">Каталог товаров</a>
+                <a class="nav_link" href="catalog.html">Каталог товаров</a>
                 <div class="dropdown">
                     <ul class="dropdown_list">
                         <li class="dropdown_item">
@@ -78,16 +78,16 @@
     <main class="main_inner">
         <!--Inner_Header -->
         <section class="inner_header">
-            <h1 class="inner_header_title">Моноподы для селфи</h1>
+            <h1 class="title inner_header_title">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs_item">
-                    <a class="breadcrumbs-link" href="index.html">Главная</a>
+                    <a class="breadcrumbs_link" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs_item">
                     <a class="breadcrumbs_link" href="catalog.html">Каталог товаров</a>
                 </li>
                 <li class="breadcrumbs_item">
-                    <a class="breadcrumbs_link">Моноподы для селфи</a>
+                    <a class="breadcrumbs_link ">Моноподы для селфи</a>
                 </li>
             </ul>
         </section>
@@ -105,10 +105,10 @@
                         <span class="visually_hidden">Изменить максимальную цену.</span>
                     </button>
                     <label class="catalog_filter_label">
-                        от <input class="catalog_filter_input" type="number" name="min-price"> ₽
+                        от <input class="catalog_filter_input" type="number" name="min-price">
                     </label>
                     <label class="catalog_filter_label">
-                        до <input class="catalog_filter_input" type="number" name="max-price"> ₽
+                        до <input class="catalog_filter_input" type="number" name="max-price">
                     </label>
                 </fieldset>
                 
@@ -232,13 +232,13 @@
             <button class="pagination_show_more" type="button">Загрузить еще</button>
             <ul class="pagination_list">
                 <li class="pagination_item">
-                    <a class="pagination_link" href="#">Вперед</a>
+                    <button class="pagination_show_more" type="button">Вперед</button>
                 </li>
                 <li class="pagination_item">
                     <a class="pagination_link" href="#">1</a>
                 </li>
                 <li class="pagination_item">
-                    <a class="pagination_link" href="#">2</a>pagination_link
+                    <a class="pagination_link" href="#">2</a>
                 <li class="pagination_item">
                     <a class="pagination_link" href="#">3</a>
                 </li>
@@ -249,7 +249,7 @@
                     <a class="pagination_link" href="#">15</a>
                 </li>
                 <li class="pagination_item">
-                    <a class="pagination_link" href="#">Назад</a>
+                    <button class="pagination_show_more" type="button">Назад</button>
                 </li>
             </ul>
         </section>
@@ -258,14 +258,14 @@
     <footer class="page_footer">
         <!--Footer_address-->
         <section class="footer_address">
-            <h2 class="visually_hidden">Адресс</h2>
-            <img src="/images/device.svg" width="145" height="36" alt="Логотип Device">
+            <h2 class="visually-hidden">Адресс</h2>
+            <img src="/images/footer_device.svg" width="145" height="36" alt="Логотип Device">
             <address class="footer_address_text">
                 <p class="footer_about_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             </address>
             <div class="footer_line"></div>
         </section>
-            <!--Footer_nav-->
+        <!--Footer_nav-->
         <section class="footer_nav">
             <h2 class="visually_hidden">Навигация</h2>
             <ul class="footer_nav_list">
@@ -279,26 +279,32 @@
                     <a href="#" class="footer_nav_link">Контакты</a>
                 </li>
             </ul>
-            <h2 class="visually_hidden">Социальные сети</h2>
+            <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="social">
                 <li class="social_item">
                     <a class="social_link" href="https://www.facebook.com/htmlacademy">
-                        <img alt="facebook" src="/images/facebook.svg" width="40" height="40">
+                        <div class="social_wrapper">
+                            <img alt="facebook" src="/images/facebook.svg" width="40" height="40">
+                        </div>
                     </a>
                 </li>
                 <li class="social_item">
                     <a class="social_link" href="https://www.instagram.com/htmlacademy/">
-                        <img alt="instagram" src="/images/instagram.svg" width="40" height="40">
+                        <div class="social_wrapper">
+                            <img alt="instagram" src="/images/instagram.svg" width="40" height="40">
+                        </div>
                     </a>
                 </li>
                 <li class="social_item">
                     <a class="social_link" href="https://twitter.com/htmlacademy_ru">
-                        <img alt="twitter" src="/images/twitter.svg" width="40" height="40">
+                        <div class="social_wrapper">
+                            <img alt="twitter" src="/images/twitter.svg" width="40" height="40">
+                        </div>
                     </a>
                 </li>
             </ul>
         </section>
-            <!--Footer_contacts-->
+        <!--Footer_contacts-->
         <section class="footer_contacts">
             <h2 class="visually_hidden">Контакты</h2>
             <a class="footer_contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
