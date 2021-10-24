@@ -72,8 +72,12 @@ h1,h2,h3 {
 /* HEADER */
 .page_header {
     color: #000000;
-    background: linear-gradient(to top, #FFE17F 88%, white 12%);
+    background-color: #FFE17F;
     min-height: 300px;
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
 }
 .header_container {
     width: 1041px;
@@ -81,29 +85,41 @@ h1,h2,h3 {
 }
 .logo {
     display: block;
+    margin-bottom: 35px;
+    margin-top: -23px;
 }
 .navigation_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    margin-bottom: 29px;
 }
 .search {
     width: 516px;
 }
 .nav_user_list {
-    display: flex;
-    margin-left: auto;
+    display: grid;
+    grid-template-columns: 1fr max-content max-content;
+    align-items: center;
+    column-gap: 40px;
 }
+
 .navigation_user_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 500px;
 }
 .nav_catalog {
     width: 516px;
 }
-.nav_container {
-    margin-left: auto;
-}
 .nav_list {
-    display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: max-content max-content 1fr;
+    column-gap: 19px;
 }
+.nav_item:last-child {
+    justify-self: end;
+}
+
 .search_form_input::-webkit-input-placeholder { 
     font-size: 16px;
     line-height: 19px;
@@ -120,6 +136,7 @@ h1,h2,h3 {
 .nav_link {
     font-family: "Raleway", sans-serif;
     line-height: 21px;
+    font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -150,17 +167,29 @@ h1,h2,h3 {
 /* MAIN SLIDER */
 
 .main_slider {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 .slider {
     display: flex;
+    position: relative;
 }
 .slider_img {
     width: 560px;
+    margin-top: -150px;
+    margin-left: 20px;
 }
 .slider_main {
     width: 560px;
     margin-left: auto;
+    margin-top: -30px;
+}
+.slider_main_title {
+    display: inline-block;
+    margin-bottom: 19px;
+}
+.slider_main_description {
+    margin: 0;
+    margin-bottom: 50px;
 }
 .slide_2 {
     display: none;
@@ -169,19 +198,27 @@ h1,h2,h3 {
     display: none;
 }
 .link_pagination_wrapper {
-    display: flex;
 }
 .slider_pagination {
-    margin-left: auto;
 }
 .slider_main_link {
     color: #000000;
+    margin-bottom: 70px;
+}
+.benefits {
+    display: flex;
+}
+.benefits_item {
+    min-width: 160px;
 }
 .benefits_title {
+    font-weight: 400;
     font-size: 36px;
     color: #000000;
+    margin-bottom: 11px;
 }
 .benefits_description {
+    margin: 0;
     font-size: 16px;
 }
 /* CATEGORIES */
@@ -198,13 +235,20 @@ h1,h2,h3 {
     width: 160px ;
     height: 160px ;
     background-color: #FFE17F ;
-    display: block;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 33px;
 }
+
 .categories_description {
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     line-height: 24px;
     color: #000000;
+    margin: 0;
+    min-width: 160px;
+    letter-spacing: -0.3px;
 }
 /* SERVICES */
 .services {
@@ -303,11 +347,15 @@ h1,h2,h3 {
 /* FOOTER */
 .page_footer {
     background-color: #444444;
+    width: 1160px;
+    margin: 0 auto;
 }
 .footer_container {
-    width: 1160px;
     display: flex;
-    margin: 0 auto;
+}
+.footer_logo {
+    display: block;
+    margin-top: 62px;
 }
 .footer_about_text {
     font-size: 16px;
@@ -334,8 +382,10 @@ h1,h2,h3 {
     display: flex;
 }
 .social_item{
+    border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.3);
     width: 40px;
+    height: 40px;
 }
 .footer_contacts {
     margin-left: auto;
@@ -355,12 +405,28 @@ h1,h2,h3 {
 .nav_exit {
     color: rgba(0, 0, 0, 0.3);
 }
-
+.nav_profile {
+    margin-right: 28px;
+}
+.open {
+    color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs {
+    display: flex;
+}
 .breadcrumbs_link {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
+.catalog_products {
+    display: flex;
+}
+.catalog_filter {
+    width: 200px;
+    margin-right: 140px;
+}
+
 .catalog_products_title {
     font-weight: 700;
     line-height: 20px;
