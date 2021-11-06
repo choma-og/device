@@ -12,15 +12,15 @@
 <header class="page_header">
     <div class="header_container">
         <div class="logo">
-            <a class="logo_link" href="#">
+            <a class="logo_link" href="/index.html">
                 <img src="/images/main-logo.svg" width="145" height="36" alt="Логотип Device">
             </a>
         </div>
         <nav class="navigation">
             <div class="navigation_container">
-                <form class="search" action="https://echo.htmlacademy.ru/" method="post">
-                    <input class="search_form_input" type="text" name="search_form_input" placeholder="Поиск по сайту">
-                    <button class="search_btn" type="submit">Найти</button>
+                <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+                    <label class="visually_hidden" for="search">Поиск по сайту</label>
+                    <input type="search" name="search" id="search" placeholder="Поиск по сайту">
                 </form>
                 <ul class="nav_user_list reset_list">
                     <li class="nav_user_item">
@@ -84,7 +84,7 @@
 </header>
     <!--Main -->
 <main class="main_container main_inner">
-    <div class="page_container">
+    <div class="page_container inner_container">
         <!--Inner_Header -->
         <section class="inner_header">
             <h1 class="title inner_header_title">Моноподы для селфи</h1>
@@ -186,33 +186,29 @@
 
             <div class="catalog-right-column">
                 <h2 class="visually_hidden">Наши товары</h2>
-                <form class="sorting_type">
-                    <label class="sorting_type_title" for="sorting">Сортировка</label>
-                    <select class="select_control" id="sorting" name="sorting">
-                        <option value="popular">Сначала популярные</option>
-                        <option value="cheap">Сначала дешёвые</option>
-                        <option value="expensive">Сначала дорогие</option>
-                    </select>
-                    <button class="visually_hidden" type="submit">Отсортировать продукты</button>
-                </form>
-                <ul class="sorting_control_list reset_list">
-                    <li class="sorting_control_item">
-                        <button class="sorting_control_btn" type="submit">
-                            <img src="/images/sort-up.svg" width="11" height="10" alt="Сортировать по возрастанию">
-                        </button>
-                        <span class="visually_hidden">Сортировать по возрастанию</span>
-                    </li>
-                    <li class="sorting-control-item">
-                        <button class="sorting_control_btn" type="submit">
-                            <img src="/images/sort-down.svg" width="11" height="10" alt="Сортировать по убыванию">
-                        </button>
-                        <span class="visually_hidden">Сортировать по убыванию</span>
-                    </li>
-                </ul>
+                <div class="sorting_container">
+                    <form class="sorting_type">
+                        <label class="sorting_type_title" for="sorting">Сортировка</label>
+                        <select class="select_control" id="sorting" name="sorting">
+                            <option value="popular">Сначала популярные</option>
+                            <option value="cheap">Сначала дешёвые</option>
+                            <option value="expensive">Сначала дорогие</option>
+                        </select>
+                        <button class="visually_hidden" type="submit">Отсортировать продукты</button>
+                    </form>
+                    <button class="sorting_control_btn" type="submit">
+                        <img src="/images/sort-up.svg" width="11" height="10" alt="Сортировать по возрастанию">
+                    </button>
+                    <button class="sorting_control_btn" type="submit">
+                        <img src="/images/sort-up.svg" width="11" height="10" alt="Сортировать по возрастанию">
+                    </button>
+                </div>
                 <ul class="product_list reset_list">
                     <li class="product_card">
                         <a class="product_card_link" href="#">
                             <img class="product_card_image" src="/images/product-1.png" width="360" height="380" alt="Любительская селфи-палка">
+                        </a>
+                        <a class="product_card_link" href="#">
                             <h3 class="product_card_title">Любительская селфи-палка</h3>
                         </a>
                         <span class="products_card_price">500 ₽</span>
@@ -220,6 +216,8 @@
                     <li class="product_card">
                         <a class="product_card_link" href="#">
                             <img class="product_card_image" src="/images/product-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
+                        </a>
+                        <a class="product_card_link" href="#">
                             <h3 class="product_card_title">Профессиональная<br>селфи-палка</h3>
                         </a>
                         <span class="products_card_price">1 500 ₽</span>
@@ -227,6 +225,8 @@
                     <li class="product_card">
                         <a class="product_card_link" href="#">
                             <img class="product_card_image" src="/images/product-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                        </a>
+                        <a class="product_card_link" href="#">
                             <h3 class="product_card_title">Непотопляемая<br>селфи-палка</h3>
                         </a>
                         <span class="products_card_price">2 500 ₽</span>
@@ -234,15 +234,17 @@
                     <li class="product_card">
                         <a class="product_card_link" href="#">
                             <img class="product_card_image" src="/images/product-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                        </a>
+                        <a class="product_card_link" href="#">
                             <h3 class="product_card_title">Селфи-палка «Следуй за<br>мной»</h3>
                         </a>
                         <span class="products_card_price">4 900 ₽</span>
                     </li>
                 </ul>
-                <button class="pagination_show_more" type="button">Загрузить еще</button>
+                <button class="pagination_show_more btn_show_more" type="button">Загрузить еще</button>
                 <ul class="pagination_list reset_list">
-                    <li class="pagination_item">
-                        <button class="pagination_show_more" type="button">Вперед</button>
+                    <li class="pagination_back">
+                        <a class="pagination_show_more control_back" href="#">Назад</a>
                     </li>
                     <li class="pagination_item">
                         <a class="pagination_link" href="#">1</a>
@@ -258,8 +260,8 @@
                     <li class="pagination_item">
                         <a class="pagination_link" href="#">15</a>
                     </li>
-                    <li class="pagination_item">
-                        <button class="pagination_show_more" type="button">Назад</button>
+                    <li class="pagination_forward">
+                        <a class="pagination_show_more control_forward" href="#" >Вперед</a>
                     </li>
                 </ul>
             </div>
@@ -269,14 +271,13 @@
     <!--Footer -->
 <footer class="page_footer">
     <div class="footer_container">
+        <img class="footer_logo" src="/images/footer-device.svg" width="145" height="36" alt="Логотип Device">
         <!--Footer_address-->
-        <section class="footer_address">
-            <h2 class="visually-hidden">Адресс</h2>
-            <img class="footer_logo" src="/images/footer-device.svg" width="145" height="36" alt="Логотип Device">
+        <section class="footer_adress">
+            <h2 class="visually_hidden">Адресс</h2>
             <address class="footer_address_text">
-                <p class="footer_about_text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <p class="footer_about_text">Санкт-Петербург, набережная<br> реки Карповки, 5, литера П.</p>
             </address>
-            <div class="footer_line"></div>
         </section>
         <!--Footer_nav-->
         <section class="footer_nav">
@@ -292,43 +293,40 @@
                     <a href="#" class="footer_nav_link">Контакты</a>
                 </li>
             </ul>
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="social reset_list">
-                <li class="social_item">
-                    <a class="social_link" href="https://www.facebook.com/htmlacademy">
-                        <div class="social_wrapper">
-                            <img alt="facebook" src="/images/facebook.svg" width="9" height="18">
-                        </div>
+        </section>
+
+        <!--Footer_phone-->
+        <section class="footer_phone">
+            <h2 class="visually_hidden">Наш телефон</h2>
+            <a class="footer_phone_link" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
+        </section>
+        <!--Footer_phone-->
+        <section class="footer_social">
+            <h2 class="visually_hidden">Наши аккаунты в социальных сетях</h2>
+            <ul class="footer_social_list reset_list">
+                <li class="footer_social_item">
+                    <a class="footer_social_link facebook" href="#">
+                        <span class="visually_hidden">Facebook</span>
                     </a>
                 </li>
-                <li class="social_item">
-                    <a class="social_link" href="https://www.instagram.com/htmlacademy/">
-                        <div class="social_wrapper">
-                            <img alt="instagram" src="/images/instagram.svg" width="16" height="16">
-                        </div>
+                <li class="footer_social_item">
+                    <a class="footer_social_link instagram" href="#">
+                        <span class="visually_hidden">Instagram</span>
                     </a>
                 </li>
-                <li class="social_item">
-                    <a class="social_link" href="https://twitter.com/htmlacademy_ru">
-                        <div class="social_wrapper">
-                            <img alt="twitter" src="/images/twitter.svg" width="15" height="14">
-                        </div>
+                <li class="footer_social_item">
+                    <a class="footer_social_link twitter" href="#">
+                        <span class="visually_hidden">Twitter</span>
                     </a>
                 </li>
             </ul>
-        </section>
-        <!--Footer_contacts-->
-        <section class="footer_contacts">
-            <div class="contacts_wrapper">
-                <h2 class="visually_hidden">Контакты</h2>
-                <a class="footer_contacts_phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-                <a class="footer_contacts_link" href="https://htmlacademy.ru/">
-                    <img src="/images/htmlacademy.svg" width="115" height="33" alt="Сайт html academy">
-                </a>
-            </div>
+            <!--htmlacademy-->
+            <section class="htmlacademy">
+                <h2 class="visually_hidden">Дизайнер макета</h2>
+                <a class="htmlacademy_link" href="https://htmlacademy.ru/">.html academy</a>
+            </section>
         </section>
     </div>
 </footer>
-    
 </body>
 </html>
