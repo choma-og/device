@@ -1366,7 +1366,7 @@ img {
   border-radius: 25px;
 }
 
-.footer_phone_link:focus:not(:focus-visible) {
+.footer_phone_link:focus:not(:focus-visible)  {
   outline: none;
 }
 
