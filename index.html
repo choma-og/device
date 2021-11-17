@@ -34,6 +34,37 @@
                         <a class="navigation_user_link" href="#">Корзина
                             <span class="visually_hidden">Количество товаров в корзине</span>
                         </a>
+                        <div class="popover">
+                            <div class="popover_content">
+                                <span class="visually_hidden">Товары в корзине</span>
+                                <ul class="cart_items_list reset_list">
+                                    <li class="cart_item">
+                                        <a href="#" class="cart_image_link">
+                                            <img class="cart_image" src="../images/amateur-selfie-stick.png" width="41" height="43" alt="Любительская селфи-палка.">
+                                        </a>
+                                        <p class="cart_item_title">Любительская селфи-палка</p>
+                                        <button class="delete_item_button" type="button">
+                                            <span class="visually_hidden">Удалить товар из корзины</span>
+                                        </button>
+                                    </li>
+                                    <li class="cart_item">
+                                        <a href="#" class="cart_image_link">
+                                            <img class="cart_image" src="../images/professional-selfie-stick.png" width="41" height="43"
+                                                alt="Любительская селфи-палка.">
+                                        </a>
+                                        <p class="cart_item_title">Профессиональная селфи-палка</p>
+                                        <button class="delete_item_button" type="button">
+                                            <span class="visually_hidden">Удалить товар из корзины</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="cart_price">
+                                    <span class="cart_goods_amount">Товаров: 2</span>
+                                    <span class="cart_goods_rate">Сумма: 2000&nbsp;₽</span>
+                                </div>
+                                <button class="cart_open_button" type="button">Открыть корзину</button>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <ul class="navigation_services_list reset_list">
@@ -103,7 +134,7 @@
                         <a class="slider_main_link btn" href="#">Подробнее</a>
                         <ul class="slider_pagination reset_list">
                             <li class="slider_pagination_item">
-                                <button class="slider_pagination_button disabled" type="button">
+                                <button class="slider_pagination_button slider_pagination_button_current" type="button">
                                     <span class="visually_hidden">1 фото</span>
                                 </button>
                             </li>
@@ -379,5 +410,58 @@
             </section>
         </div>
     </footer>
+    <!--Modal-->
+    <div class="modal_container">
+        <div class="modal modal_delivery">
+            <button class="modal_close_button" type="button">
+                <span class="visually_hidden">Закрыть модальное окно</span>
+            </button>
+            <section class="modal_content">
+                <h2 class="modal_title">Доставка под заказ</h2>
+                <form class="modal_form" action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="modal_form_container">
+                        <div class="modal_form_block modal_form_name">
+                            <label class="modal_form_label" for="your-name">Ваше имя:</label>
+                            <input class="modal_form_field" type="text" name="your-name" id="your-name"
+                                placeholder="Имя Фамилия">
+                            <span class="modal_note modal_name_note">Пожалуйста, представьтесь</span>
+                        </div>
+                        <div class="modal_form_block modal_form_email">
+                            <label class="modal_form_label" for="your-email">Ваш e-mail:</label>
+                            <input class="modal_form_field" type="text" name="your-email" id="your-email"
+                                value="destroksie@icloud.com" required>
+                            <span class="modal_note modal_email_note">Забавный у вас адрес</span>
+                        </div>
+                    </div>
+                    <div class="modal_form_container">
+                        <div class="modal_form_block modal_form_delivery">
+                            <label class="modal_form_label" for="delivery-order">Что нужно привезти:</label>
+                            <input class="modal_form_field" type="text" name="delivery-order" id="delivery-order"
+                                placeholder="В свободной форме">
+                        </div>
+                        <div class="modal_form_block modal_form_number">
+                            <label class="modal_form_label modal_tooltip_label" for="delivery-number">Количество:</label>
+                            <span class="visually_hidden">Дополнительные условия доставки</span>
+                            <div class="modal_tooltip">
+                                <p class="modal_tooltip_info">Постараемся найти, сколько нужно. Привезём сколько получится
+                                    по требованиям к&nbsp;провозу багажа.</p>
+                            </div>
+                            <div class="modal_number_container">
+                                <input class="modal_form_field modal_number_field" type="number" name="delivery-amount"
+                                    id="delivery-number" value="1" min="1">
+                                <button class="modal_number_button modal_button_minus" type="button">
+                                    <span class="visually_hidden"> Уменьшить количество товаров</span>
+                                </button>
+                                <button class="modal_number_button modal_button_plus" type="button">
+                                    <span class="visually_hidden"> Увеличить количество товаров</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_modal" type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
