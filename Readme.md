@@ -1,6 +1,5 @@
 # Личный проект «Девайс»
 
-* Студент: [Artem Golubchikov](https://up.htmlacademy.ru/htmlcss/32/user/1854407).
 * Наставник: `Дмитрий Железцов`.
 
 ---
